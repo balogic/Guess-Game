@@ -1,13 +1,9 @@
-var guess;
-var thinking;
-guess = Math.ceil(Math.random()*1000);
-thinking = window.prompt("Enter some number between 1 to 1000:");
-while (guess != thinking) {
-  if (guess < thinking) {
-    thinking = window.prompt('Your guess is too high.Try again');
+var Guess = React.createClass({
+  getInitialState: function () {
+    return ({count: 200})
+  },
+  render: function () {
+    return (<input type="text" placeholder="Enter your Guess"></input>)
   }
-    else {
-      thinking = window.prompt('Your guess is too low.Try again');
-    }
-  }
-window.alert('Success');
+})
+ReactDOM.render(<Guess/>,document.getElementById('content'));
