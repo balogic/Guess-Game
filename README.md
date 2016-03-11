@@ -1,4 +1,4 @@
 Guess Game
 ============
 
-A simple Guess game in javascript for learning purpose
+A simple Guess game powered by (ReactJS)[https://facebook.github.io/react]
